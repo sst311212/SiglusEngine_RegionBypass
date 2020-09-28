@@ -1,0 +1,4 @@
+LIBRARY
+EXPORTS
+	DirectSoundCreate		@1
+	Direct3DCreate9			@2

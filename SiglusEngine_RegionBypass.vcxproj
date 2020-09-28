@@ -101,6 +101,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <AdditionalDependencies>detours.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>dllmain.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -117,6 +118,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <AdditionalDependencies>detours.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>dllmain.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -139,6 +141,7 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <AdditionalDependencies>detours.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>dllmain.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -159,6 +162,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <AdditionalDependencies>detours.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>dllmain.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -167,6 +171,9 @@
   <ItemGroup>
     <ClInclude Include="detours.h" />
     <ClInclude Include="detver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dllmain.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
